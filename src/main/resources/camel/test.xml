@@ -10,7 +10,7 @@
         xsi:schemaLocation="http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
     <route id="test">
-        <from uri="milo-client:tcp://opc-ua-demo-service.milo.svc.cluster.local:62541/milo" />
+        <from uri="milo-client:tcp://opcua-build-env.milo.svc.cluster.local:12686/milo" />
         <log message="${body.value}" />
     </route>
 
